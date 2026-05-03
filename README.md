@@ -89,14 +89,13 @@ python3 magene_sync_v3.py --days 7 --force
 
 本项目参考和借鉴了以下优秀开源项目/资料，特此感谢：
 
+- **[Onelap-Strava-GoGoGo](https://github.com/Tyan66666/Onelap-Strava-GoGoGo)** — 感谢作者的分享思路，为本项目的实现提供了重要参考
 - **[fitparse](https://github.com/dtcooper/python-fitparse)** — FIT 文件解析的 Python 实现，为本项目的 FIT 解析器提供了技术参考
 - **[Strava API Docs](https://developers.strava.com/)** — Strava 官方 API 文档，上传和数据管理的核心参考
 - **[TrainingPeaks Blog - ACWR](https://www.trainingpeaks.com/blog/acute-chronic-workload-ratio/)** — 急慢性负荷比（ACWR）理论，指导训练负荷量化
 - **[Tim Gabbett 的 ACWR 研究](https://journals.lww.com/nsca-jscr/abstract/2016/03000/the_training_injury_prevention_paradox_.1.aspx)** — 运动医学领域关于训练负荷与受伤风险的经典研究
 - **Banister EW, et al. "A systems model of training for athletic performance"** — TRIMP（训练冲量）方法的原始论文
 - **Edwards S. "The Heart Rate Monitor Book"** — Edwards TRIMP 加权模型（Z1×1 ~ Z5×5）的提出者
-- **[QwenPaw](https://github.com/openclaw/QwenPaw)** — 多智能体协作框架，本项目中的运动教练、数据分析等功能由其驱动
+- **[QwenPaw](https://github.com/openclaw/QwenPaw)** — 多智能体协作框架，本项目中的运动教练、数据分析等功能基于 AI 智能体实现
 
-## 协议
-
-MIT License
+> 💡 本项目完全由 **AI 驱动** — 从代码编写、训练分析到持续迭代均由多智能体系统自动完成。
