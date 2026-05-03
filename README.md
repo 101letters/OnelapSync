@@ -23,7 +23,7 @@ cd magene-to-strava
 ### 2. 配置
 
 ```bash
-cp .env.example .env
+cp env.example .env
 # 编辑 .env，填入你的认证信息
 ```
 
@@ -36,7 +36,7 @@ pip install requests
 ### 4. 配置环境变量
 
 ```bash
-cp .env.example .env
+cp env.example .env
 ```
 
 编辑 `.env`，填入你的认证信息，参考格式如下：
