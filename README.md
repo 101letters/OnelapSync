@@ -43,8 +43,8 @@ cp env.example .env
 
 ```# ─── 骑行平台认证 ─────────────────────
 # OneLap / 顽鹿 登录凭证
-IGPSPORT_USERNAME=your_phone_or_email
-IGPSPORT_PASSWORD=your_password
+ONELAP_USERNAME=your_phone_or_email
+ONELAP_PASSWORD=your_password
 
 # ─── Strava API ──────────────────────
 STRAVA_ACCESS_TOKEN=your_strava_access_token
