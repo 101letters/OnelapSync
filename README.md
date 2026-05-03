@@ -41,34 +41,25 @@ cp env.example .env
 
 编辑 `.env`，填入你的认证信息，参考格式如下：
 
-```bash
-# ─── 骑行平台认证 ─────────────────────
-# Magene / 顽鹿 OneLap
-MAGENE_TOKEN=your_magene_jwt_token_here
-MAGENE_OUID=your_ouid_here
-
-# iGPSport（备用平台）
+```# ─── 骑行平台认证 ─────────────────────
+# OneLap / 顽鹿 登录凭证
 IGPSPORT_USERNAME=your_phone_or_email
 IGPSPORT_PASSWORD=your_password
-IGPSPORT_ACCESS_TOKEN=your_igpsport_token
 
-# Giant（备用平台）
-GIANT_TOKEN=your_giant_token
-
-# ─── Strava ──────────────────────────
+# ─── Strava API ──────────────────────
 STRAVA_ACCESS_TOKEN=your_strava_access_token
 STRAVA_REFRESH_TOKEN=your_strava_refresh_token
 STRAVA_CLIENT_ID=your_strava_api_client_id
 STRAVA_CLIENT_SECRET=your_strava_api_client_secret
 
-# ─── 通知 ────────────────────────────
+# ─── 通知（可选）────────────────────
 BARK_URL=https://api.day.app/your_bark_device_key
 
 # ─── 数据分析（可选）────────────────
 # ANALYSIS_MAX_HR=194
 ```
 
-### 5. 运行
+### 5. 运行### 5. 运行
 
 ```bash
 # 试运行（不实际上传）
