@@ -48,11 +48,11 @@ LOG_DIR = BASE_DIR / "logs"
 LOG_FILE = LOG_DIR / "sync_v3.log"
 ENV_FILE = BASE_DIR / ".env"
 
-ONELAP_SIGN_KEY = "fe9f8382418fcdeb136461cac6acae7b"
-ONELAP_LOGIN_URL = "https://www.onelap.cn/api/login"
-ONELAP_OTM_BASE = "https://otm.onelap.cn"
-STRAVA_API_BASE = "https://www.strava.com/api/v3"
-STRAVA_OAUTH_URL = "https://www.strava.com/oauth/token"
+ONELAP_SIGN_KEY = os.environ.get("ONELAP_SIGN_KEY", "fe9f8382418fcdeb136461cac6acae7b")
+ONELAP_LOGIN_URL = os.environ.get("ONELAP_LOGIN_URL", "https://www.onelap.cn/api/login")
+ONELAP_OTM_BASE = os.environ.get("ONELAP_OTM_BASE", "https://otm.onelap.cn")
+STRAVA_API_BASE = os.environ.get("STRAVA_API_BASE", "https://www.strava.com/api/v3")
+STRAVA_OAUTH_URL = os.environ.get("STRAVA_OAUTH_URL", "https://www.strava.com/oauth/token")
 
 
 def load_dotenv(env_path: Path):
@@ -185,10 +185,10 @@ class MageneStravaSyncV3:
             "activities": {},
         }
 
-        self.account = os.environ.get("IGPSPORT_USERNAME", "")
-        self.password = os.environ.get("IGPSPORT_PASSWORD", "")
+        self.account = os.environ.get("ONELAP_USERNAME", "")
+        self.password = os.environ.get("ONELAP_PASSWORD", "")
         if not self.account or not self.password:
-            raise ValueError("环境变量 IGPSPORT_USERNAME 或 IGPSPORT_PASSWORD 未设置")
+            raise ValueError("环境变量 ONELAP_USERNAME 或 ONELAP_PASSWORD 未设置")
 
         self.bark_url = os.environ.get("BARK_URL", "")
         self.strava_access_token = os.environ.get("STRAVA_ACCESS_TOKEN", "")

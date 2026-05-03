@@ -23,6 +23,7 @@ FIT 文件解析与骑行数据分析模块
 import argparse
 import json
 import math
+import os
 import sys
 import tempfile
 from dataclasses import dataclass, field
@@ -34,7 +35,7 @@ import fitparse
 
 # ─── 心率区间定义 ──────────────────────────────
 # 基于最大心率百分比（默认 220-age，可由用户覆盖）
-DEFAULT_MAX_HR = 194  # 默认最大心率（ACSM公式: 220-age 近似），可通过配置覆盖
+DEFAULT_MAX_HR = int(os.environ.get("ANALYSIS_MAX_HR", "194"))  # 默认最大心率（ACSM公式: 220-age 近似），可通过配置覆盖
 
 HR_ZONES = {
     "Z1_恢复":     (0.50, 0.60, "恢复/热身"),

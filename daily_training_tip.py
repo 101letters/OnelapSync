@@ -37,10 +37,10 @@ SYNC_STATE_FILE = BASE_DIR / "sync_state_v3.json"
 LOG_DIR = BASE_DIR / "logs"
 LOG_FILE = LOG_DIR / "daily_training_tip.log"
 
-STRAVA_API_BASE = "https://www.strava.com/api/v3"
-STRAVA_OAUTH_URL = "https://www.strava.com/oauth/token"
+STRAVA_API_BASE = os.environ.get("STRAVA_API_BASE", "https://www.strava.com/api/v3")
+STRAVA_OAUTH_URL = os.environ.get("STRAVA_OAUTH_URL", "https://www.strava.com/oauth/token")
 # ─── 彩云天气（主） ────────────────────
-CAIYUN_API_BASE = "https://api.caiyunapp.com/v2.5"
+CAIYUN_API_BASE = os.environ.get("CAIYUN_API_BASE", "https://api.caiyunapp.com/v2.5")
 
 # ─── 和风天气（后备） ──────────────────
 

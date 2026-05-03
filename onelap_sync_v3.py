@@ -49,11 +49,11 @@ LOG_DIR = BASE_DIR / "logs"
 LOG_FILE = LOG_DIR / "sync_v3.log"
 ENV_FILE = BASE_DIR / ".env"
 
-ONELAP_SIGN_KEY = "fe9f8382418fcdeb136461cac6acae7b"
-ONELAP_LOGIN_URL = "https://www.onelap.cn/api/login"
-ONELAP_OTM_BASE = "https://otm.onelap.cn"
-STRAVA_API_BASE = "https://www.strava.com/api/v3"
-STRAVA_OAUTH_URL = "https://www.strava.com/oauth/token"
+ONELAP_SIGN_KEY = os.environ.get("ONELAP_SIGN_KEY", "fe9f8382418fcdeb136461cac6acae7b")
+ONELAP_LOGIN_URL = os.environ.get("ONELAP_LOGIN_URL", "https://www.onelap.cn/api/login")
+ONELAP_OTM_BASE = os.environ.get("ONELAP_OTM_BASE", "https://otm.onelap.cn")
+STRAVA_API_BASE = os.environ.get("STRAVA_API_BASE", "https://www.strava.com/api/v3")
+STRAVA_OAUTH_URL = os.environ.get("STRAVA_OAUTH_URL", "https://www.strava.com/oauth/token")
 
 VERSION = "V3.4"
 STATE_VERSION = 3
@@ -68,11 +68,16 @@ UPLOAD_POLL_INTERVALS = [2] * 10 + [5] * 10 + [10] * 10
 ENV_KEYS = {
     "onelap_username": "ONELAP_USERNAME",
     "onelap_password": "ONELAP_PASSWORD",
+    "onelap_sign_key": "ONELAP_SIGN_KEY",
+    "onelap_login_url": "ONELAP_LOGIN_URL",
+    "onelap_otm_base": "ONELAP_OTM_BASE",
     "bark_url": "BARK_URL",
     "strava_access_token": "STRAVA_ACCESS_TOKEN",
     "strava_refresh_token": "STRAVA_REFRESH_TOKEN",
     "strava_client_id": "STRAVA_CLIENT_ID",
     "strava_client_secret": "STRAVA_CLIENT_SECRET",
+    "strava_api_base": "STRAVA_API_BASE",
+    "strava_oauth_url": "STRAVA_OAUTH_URL",
     "analysis_max_hr": "ANALYSIS_MAX_HR",
 }
 
