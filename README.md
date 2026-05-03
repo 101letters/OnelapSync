@@ -1,13 +1,13 @@
-# Magene → Strava 骑行活动自动同步
+# OnelapSync — 顽鹿骑行数据 → Strava 自动同步
 
-将 Magene（顽鹿/OneLap）骑行活动自动同步到 Strava，并写入科学的训练分析。
+将 **OneLap（顽鹿）** 骑行活动自动同步到 **Strava**，并基于多智能体系统（Multi-Agent AI）生成科学的训练分析，自动写入活动描述。
 
 ## 功能
 
-- 🚴 **自动同步**：定时拉取 Magene 活动 → 下载 FIT 文件 → 上传 Strava
+- 🚴 **自动同步**：定时拉取顽鹿活动 → 下载 FIT 文件 → 上传 Strava
 - 📊 **FIT 解析**：心率区间（ACSM 5-zone）、爬升、速度、踏频、坡度
-- 🧠 **AI 分析**：调 coach agent 生成训练建议，自动写入 Strava 活动描述
-- 📈 **训练负荷计算**：Edwards TRIMP + ACWR 急慢性负荷比
+- 🧠 **AI 教练分析**：调 coach agent 生成训练建议与明日计划，自动写入 Strava 描述
+- 📈 **训练负荷量化**：Edwards TRIMP + ACWR 急慢性负荷比，科学评估训练状态
 - 🔔 **通知**：Bark 推送同步结果摘要
 - 🛡 **防重复**：文件锁 + 状态追踪，不会重复上传
 
