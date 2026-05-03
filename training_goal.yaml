@@ -1,0 +1,6 @@
+weekly:
+  target_hours: 6
+  target_rides: 4
+  target_long_ride: true
+  target_intensity_sessions: 1
+  priority: "base endurance"

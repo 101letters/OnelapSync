@@ -20,3 +20,15 @@ Thumbs.db
 # 项目
 analysis_pending.json
 activity_analysis_results.json
+
+# Agent 工作区配置（私有）
+skills/
+AGENTS.md
+MEMORY.md
+PROFILE.md
+SOUL.md
+agent.json
+skill.json
+
+# 个人记忆（私有）
+memory/
