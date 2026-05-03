@@ -1,0 +1,37 @@
+{
+  "magene": {
+    "token_env": "MAGENE_TOKEN",
+    "ouid_env": "MAGENE_OUID"
+  },
+  "strava": {
+    "access_token_env": "STRAVA_ACCESS_TOKEN",
+    "refresh_token_env": "STRAVA_REFRESH_TOKEN",
+    "client_id_env": "STRAVA_CLIENT_ID",
+    "client_secret_env": "STRAVA_CLIENT_SECRET"
+  },
+  "notification": {
+    "success_only": true,
+    "failure_alert_threshold": 3,
+    "bark_url_env": "BARK_URL"
+  },
+  "sync_settings": {
+    "base_url": "https://ccroute.cn",
+    "sync_days": 1,
+    "page_size": 20,
+    "request_timeout": 60,
+    "max_uploads_per_run": 20,
+    "max_backfill_days": 7,
+    "allow_full_sync": false,
+    "magene_fetch_mode": "activity_sync_api"
+  },
+  "activity_type": {
+    "force_sport_type": "Ride",
+    "log_activity_types": true
+  },
+  "analysis": {
+    "enabled": true,
+    "max_hr": 194,
+    "min_duration_s": 180,
+    "min_distance_km": 2.0
+  }
+}
