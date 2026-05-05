@@ -12,6 +12,7 @@ sync_state*.json
 logs/
 *.log
 *.lock
+.backoff_*.state
 
 # 系统
 .DS_Store
@@ -21,6 +22,22 @@ Thumbs.db
 analysis_pending.json
 activity_analysis_results.json
 
+# 数据库（含训练数据）
+*.db
+*.db-*
+
+# 运行时状态
+push_delta_state.json
+chats.json
+analysis_pending.json.bak
+analysis_pending.json.migrated
+
+# 备份文件
+*.bak
+backup/
+jobs.json.*
+bootstrap_*.json
+
 # Agent 工作区配置（私有）
 skills/
 AGENTS.md
@@ -29,6 +46,18 @@ PROFILE.md
 SOUL.md
 agent.json
 skill.json
+.bootstrap_completed
+.reme_store_v1
 
 # 个人记忆（私有）
 memory/
+
+# 文件存储
+dialog/
+file_store/
+media/
+
+# 迁移/升级脚本
+migrate_*.py
+_update_schema.py
+backfill_*.py
